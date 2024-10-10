@@ -3,9 +3,6 @@
 import { useEffect, useState } from "react";
 import Results from "./Results";
 
-import { sql } from '@vercel/postgres';
-import { NextResponse } from 'next/server';
-
 export default function Numbergame() {
 
   const [update, setUpdate] = useState(0)
