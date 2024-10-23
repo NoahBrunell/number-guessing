@@ -14,7 +14,7 @@ export default function Results({ props }: Props) {
   const data = props;
 
   return (
-    <div className="flex flex-col items-center my-24">
+    <div className="flex flex-col items-center my-24"> 
       <div className="flex flex-col-reverse">
         {data.map((d: Guess, i: number) => (
           <div className="flex items-center" key={i}>
