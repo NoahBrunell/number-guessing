@@ -44,7 +44,7 @@ export default function Numbergame() {
   useEffect(() => {
     async function fetchData() {
       try {
-        const res = await fetch(`http://localhost:3000/api/getResults?cacheBuster=${String(Date.now())}`);
+        const res = await fetch(`/api/getResults?cacheBuster=${String(Date.now())}`);
         if (!res.ok) throw new Error("Failed to fetch data");
         const jsonData = await res.json();
         console.log(jsonData);
