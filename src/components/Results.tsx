@@ -22,8 +22,8 @@ export default function Results( props: any ) {
             <h1 className="text-2xl font-semibold w-12">{i+1}.</h1>
             {d.result ? (<h1 className="text-xl text-green-500 font-bold w-48">Win</h1>) : (<h1 className="text-xl text-red-500 font-bold w-48">Loss</h1>)}
             <h1 className="w-48">{d.randomnumber}</h1>
-            <h1 className="w-48">{d.computerguess}</h1>
-            <h1 className="w-48">{d.playerguess}</h1>
+            <h1 className="w-48">{d.computerguess}</h1> 
+            <h1 className="w-48">{d.playerguess}</h1>  
           </div>
         ))}
         <div className="flex items-center">
