@@ -12,7 +12,7 @@ export default function Numbergame() {
   const [number, setNumber] = useState(0)
 
   async function sendData(result:boolean) {
-    const res = await fetch(`http://localhost:3000/api/sendResults?random=${random}&computerNumber=${computerNumber}&number=${number}&result=${result}&cacheBuster=${String(Date.now())}`)
+    await fetch(`http://localhost:3000/api/sendResults?random=${random}&computerNumber=${computerNumber}&number=${number}&result=${result}&cacheBuster=${String(Date.now())}`)
 
     setRandom(Math.floor(Math.random() * 100) + 1)
     setComputerNumber(Math.floor(Math.random() * 100) + 1)
